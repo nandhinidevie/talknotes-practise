@@ -1,16 +1,34 @@
 -- import: fastn-community.github.io/design-system as ds
-
-
--- ds.page-widths widths:
-regular.px: 1200
-narrow.px: 1000
-wide.px: 1600
+-- import: fastn-community.github.io/bling/collapse
 
 -- ds.page:
-widths: $widths
 
+-- header:
 
+-- hero:
 
+-- social-proof:
+
+-- ftd.image:
+src: assets/arrow-down.png
+width.fixed.px: 60
+align-self: center
+
+-- how-it-works:
+
+-- use-cases:
+
+-- demo:
+
+-- testimonials:
+
+-- pricing:
+
+-- faq:
+
+-- last:
+
+-- footer:
 
 -- end: ds.page
 
@@ -19,4 +37,802 @@ widths: $widths
 
 
 
+
+
+-- component footer:
+
+-- ds.section-column:
+inner-background.solid: $ds.colors.background.step-1
+inset: $ds.spaces.inset-square.extra-large
+spacing: $ds.spaces.vertical-gap.extra-extra-large
+flush: full
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-large
+align-content: top-center
+
+-- ds.column:
+align-content: left
+
+-- ftd.image: 
+src: https://talknotes.io/_ipx/q_80&s_150x36/images/brand/logo-white.svg
+width.fixed.px: 150
+
+-- ds.copy-regular:
+
+Turn your thoughts into actionable notes.
+
+-- ds.fine-print:
+
+© 2023 - talknotes.io All rights reserved.
+
+-- end: ds.column
+
+
+-- ds.column:
+align-content: left
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-secondary-heading: USE CASES
+
+-- ds.footer-link: Brainstorming
+link: /
+
+-- ds.footer-secondary-heading: LINKS
+
+-- ds.footer-link: Reviews
+link: /
+
+-- ds.footer-link: Pricing
+link: /
+
+-- ds.footer-link: Download
+link: /
+
+-- ds.footer-link: Affiliate Program
+link: /
+
+-- ds.footer-link: FAQ
+link: /
+
+-- ds.footer-link: Blog
+link: /
+
+-- end:ds.column
+
+
+
+-- ds.column:
+align-content: left
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-secondary-heading: LEARN
+
+-- ds.footer-link: How to transcribe voice memos
+link: /
+
+-- ds.footer-link: Brainstorming AI
+link: / 
+
+-- ds.footer-secondary-heading: FREE TOOLS
+
+-- ds.footer-link: Voice memo transcription
+link: /
+
+-- ds.footer-link: MP3 to text converter
+link: /
+
+-- end:ds.column
+
+
+
+-- ds.column:
+align-content: left
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-secondary-heading: CONTACT
+
+-- ds.footer-link: support@talknotes.io
+link: /
+
+-- ds.fine-print: 
+
+1309 Coffen Avenue STE 1200, Sheridian,
+Wyoming, 82801, United States,
+(302) 404-3928
+
+-- ds.footer-secondary-heading: LEGAL
+
+-- ds.footer-link: Privacy Policy
+link: /
+
+-- ds.footer-link: Terms of Service
+link: /
+
+-- ds.footer-link: Facebook Disclaimer
+link: /
+
+-- end: ds.column
+
+
+
+-- end: ds.row
+
+
+-- end: ds.section-column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component last:
+
+-- ds.container:
+inset: $ds.spaces.inset-square.large
+background.solid: blue
+width.fixed.percent: 70
+radius: $ds.radius.medium
+
+-- ds.row:
+
+-- ds.column:
+align-content: left
+
+-- ds.copy-large:
+
+Turn messy thoughts into actionable notes
+
+-- ds.copy-regular:
+
+Speak your ideas & turn your ramblings into usable content. Create unlimited notes, record audio up to 20 minutes long, and give custom instructions.
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- end: ds.column
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_500&q_80/images/banner-thumbnail.jpg
+
+-- end: ds.row
+
+-- end: ds.container
+
+-- end: last
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component faq:
+
+-- ds.section-column:
+flush: narrow
+inset: $ds.spaces.inset-wide.large
+spacing: $ds.spaces.horizontal-gap.medium
+margin: $ds.spaces.vertical-gap.extra-large
+
+-- ds.heading-medium: F.A.Q
+text-align: center
+
+-- collapse.collapse: How accurate is the voice-to-text conversion?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+-- collapse.collapse: Lorem ipsum dolor
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+-- collapse.collapse: Lorem ipsum dolor
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+
+-- collapse.collapse: Lorem ipsum dolor
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut
+
+-- end: ds.section-column
+
+-- end: faq
+
+
+
+
+
+
+
+
+
+
+
+-- component pricing:
+
+-- ds.section-column:
+
+-- ds.heading-medium: Pricing
+text-align: center
+
+-- ds.heading-large: Turn your ramblings into actionable notes
+text-align: center
+
+-- ds.heading-tiny: Limited time Launch offer: up to 75% off
+text-align: center
+color: blue
+
+-- ds.container:
+inset: $ds.spaces.inset-square.large
+background.solid: $ds.colors.background.step-1
+width.fixed.percent: 80
+radius: $ds.radius.medium
+
+-- ds.row:
+
+-- ds.column:
+
+-- ds.heading-hero: USD 59
+text-align: center
+
+-- ds.copy-small:
+
+For a whole year of access
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- ds.fine-print:
+
+Secure payment with Stripe
+
+-- end: ds.column
+
+-- ds.column:
+
+-- ds.copy-small:
+color: $ds.colors.text-strong
+
+TalkNotes + Include:
+
+-- ds.copy-small:
+
+- Unlimited notes
+- 20 minutes recordings
+- File upload
+- Custom styles
+- Secure your discount forever
+
+-- end: ds.column
+
+-- end: ds.row
+
+-- end: ds.container
+
+
+
+-- ds.copy-large:
+text-align: center
+
+Trusted by +3000 happy users 
+
+-- social-proof:
+
+-- end: ds.section-column
+
+-- end: pricing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component testimonials:
+
+-- ds.section-row:
+spacing: $ds.spaces.horizontal-gap.large
+wrap: true
+flush: wide
+inset: $ds.spaces.inset-wide.small
+
+-- testimonial: Outstanding Quality
+name: Thomas Mickeleit
+country: Germany
+
+The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
+
+-- testimonial: Outstanding Quality
+name: Thomas Mickeleit
+country: Germany
+
+The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
+
+-- testimonial: Outstanding Quality
+name: Thomas Mickeleit
+country: Germany
+
+The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
+
+
+-- end: ds.section-row
+
+-- end: testimonials
+
+
+
+
+
+
+
+-- component testimonial:
+caption title:
+body description:
+string name:
+string country:
+
+-- ds.container:
+inset: $ds.spaces.inset-square.medium
+background.solid: $ds.colors.background.step-1
+width.fixed.percent: 30
+radius: $ds.radius.medium
+/ spacing: $ds.spaces.vertical-gap.large
+
+-- ds.heading-tiny: $testimonial.title
+color: $ds.colors.text-strong
+
+-- ds.fine-print: 
+color: $ds.colors.text
+
+$testimonial.description
+
+-- ds.row:
+align-content: left
+width: hug-content
+
+-- ds.fine-print: 
+color: $ds.colors.text-strong
+
+$testimonial.name
+
+-- ds.fine-print: 
+color: $ds.colors.text
+
+$testimonial.country
+
+-- end: ds.row
+
+-- end: ds.container
+
+-- end: testimonial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component demo:
+
+-- ds.section-column:
+
+-- ds.heading-medium: Demo video
+text-align: center
+
+-- ds.copy-regular:
+text-align: center
+
+Want to see the app in action? No worries, I've got you covered!
+
+Here is a live demo showing how to create a note:
+
+
+-- ftd.video:
+src: https://talknotes.io/videos/step-1.mp4
+width.fixed.percent: 95
+autoplay: true
+loop: true
+border-radius.px: 15
+
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- end: ds.section-column
+
+-- end: demo
+
+
+
+-- component use-cases:
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
+
+-- ds.heading-medium: Use cases
+text-align: center
+
+-- features:
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- end: ds.section-column
+
+-- end: use-cases
+
+
+
+
+
+
+-- component features:
+
+-- ds.section-row:
+spacing: $ds.spaces.vertical-gap.medium
+wrap: true
+
+-- feature:  Brainstorming
+
+Capture your creative sparks on the go! TalkNotes transcribes your brainstorming sessions, so you can focus on your next big idea without missing a beat.
+
+-- feature:  Content Creation
+
+Create content effortlessly! Dictate your thoughts directly into text and speed up the writing process. Ideal for bloggers, writers, and content marketers.
+
+-- feature:  Journaling
+
+Document your personal journey with ease! Voice journaling with TalkNotes helps you express feelings, ideas, and memories without the need to type.
+-- feature:  Interviews
+
+Transcribe interviews in real-time! Whether it's for journalism or research, TalkNotes provides accurate text from your recorded conversations.
+
+-- feature:  Meetings
+
+Make meetings more productive! Record discussions, transcribe them instantly, and never miss an important detail again.
+
+-- feature:  Educational Notes
+
+Enhance your learning! TalkNotes allows students and educators to convert lectures and study sessions into clear, organized notes for future reference.
+
+-- end: ds.section-row
+
+-- end: features
+
+
+
+-- component feature:
+caption title:
+body description:
+
+-- ds.container:
+inset: $ds.spaces.inset-square.medium
+background.solid: $ds.colors.background.step-1
+width.fixed.percent: 30
+radius: $ds.radius.medium
+
+-- ds.heading-small: $feature.title
+color: $ds.colors.text-strong
+
+-- ds.fine-print: 
+color: $ds.colors.text
+
+$feature.description
+
+-- end: ds.container
+
+-- end: feature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component how-it-works:
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.extra-large
+
+-- ds.heading-medium: How does it work?
+text-align: center
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-extra-large
+inset: $ds.spaces.inset-wide.small
+
+-- ftd.video:
+src: https://talknotes.io/videos/step-1.mp4
+width.fixed.percent: 40
+autoplay: true
+loop: true
+border-radius.px: 15
+
+-- ds.column:
+
+-- ds.heading-small: 1. Record Your Voice
+
+-- ds.copy-large: 
+
+Speak your thoughts & ideas. Don't stress about format, grammar, pauses or mistakes, just talk naturally, we handle the rest.
+
+-- end: ds.column
+
+-- end: ds.row
+
+
+
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-extra-large
+inset: $ds.spaces.inset-wide.small
+
+-- ds.column:
+align-content: right
+
+-- ds.heading-small: 2.Choose a style
+text-align: end
+
+-- ds.copy-large:
+text-align: end
+
+TalkNotes will transcribe your voice into any kind of content. Transcript, Task list, journal entry, Blog post... Your creativity is the only limit!
+
+-- end: ds.column
+
+-- ftd.video:
+src: https://talknotes.io/videos/step-2.mp4
+width.fixed.percent: 40
+autoplay: true
+loop: true
+border-radius.px: 15
+
+-- end: ds.row
+
+
+
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-extra-large
+inset: $ds.spaces.inset-wide.small
+
+-- ftd.video:
+src: https://talknotes.io/videos/step-3.mp4
+width.fixed.percent: 40
+autoplay: true
+loop: true
+border-radius.px: 15
+
+-- ds.column:
+
+-- ds.heading-small: 3. Edit & organize
+
+-- ds.copy-large: 
+
+Tweak your note to your liking. Create folders, add tags, change the format, edit the transcript or share it with others.
+
+-- end: ds.column
+
+-- end: ds.row
+
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+
+-- end: ds.section-column
+
+-- end: how-it-works
+
+
+
+
+
+
+
+-- component social-proof:
+
+-- ds.section-row:
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_200&q_80/images/social-proof/sp-medium.svg
+width.fixed.px: 200
+height.fixed.px: 50
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_200&q_80/images/social-proof/sp-ih.svg
+width.fixed.px: 200
+height.fixed.px: 50
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_200&q_80/images/social-proof/sp-foundr.svg
+width.fixed.px: 150
+height.fixed.px: 50
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_200&q_80/images/social-proof/sp-scoopit.svg
+width.fixed.px: 150
+height.fixed.px: 50
+
+-- end: ds.section-row
+
+-- end: social-proof
+
+
+-- component hero:
+
+-- ds.section-row:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.column:
+spacing: $ds.spaces.vertical-gap.large
+align-content: left
+
+-- ds.heading-large: Turn messy thoughts into actionable notes. Fast.
+
+-- ds.heading-small: The #1 AI. voice voicenote app
+
+-- ds.copy-large:
+
+Turn hours of note taking into minutes. Just record a voicenote, and let the AI transcribe, clean up and structure it for you. 
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- ds.copy-small:
+color: $inherited.colors.text-strong
+
+Trusted by +3000 happy users
+
+-- end: ds.column
+
+-- ftd.image: 
+src: assets/hero.png
+width.fixed.percent: 40
+border-radius.px: 15
+
+-- end: ds.section-row
+
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component header:
+
+-- ds.section-row:
+inset: $ds.spaces.inset-tall.zero-small
+outer-background.solid: $ds.colors.background.step-2
+spacing: $ds.spaces.horizontal-gap.extra-large
+
+-- ftd.image:
+src: https://talknotes.io/_ipx/w_150&q_80/images/brand/logo-color.svg
+width.fixed.px: 142
+height.fixed.px: 34
+
+-- ds.row:
+width: hug-content
+
+-- ds.header-link: Try it
+link: /
+
+-- ds.header-link: How it works
+link: /
+
+-- ds.header-link: Use cases
+link: /
+
+-- ds.header-link: Pricing
+link: /
+
+-- ds.header-link: FAQ
+link: /
+
+-- end: ds.row
+
+-- ds.row:
+width: hug-content
+
+-- ds.info-button: Login
+link: /
+
+-- ds.phosphor-icon-button: Get Talknotes +
+icon: arrow-right
+link: /
+
+-- end: ds.row
+
+-- end: ds.section-row
+
+-- end: header
 
