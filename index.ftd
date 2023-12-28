@@ -379,7 +379,7 @@ Trusted by +3000 happy users
 -- component testimonials:
 
 -- ds.section-row:
-spacing: $ds.spaces.horizontal-gap.large
+spacing: $ds.spaces.horizontal-gap.medium
 wrap: true
 flush: wide
 inset: $ds.spaces.inset-wide.small
@@ -390,17 +390,17 @@ country: Germany
 
 The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
 
--- testimonial: Outstanding Quality
-name: Thomas Mickeleit
-country: Germany
+-- testimonial: A huge time-saver
+name: Pier Smulders
+country: New Zealand
 
-The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
+This is really great app and a huge time-saver. I like that the emails are in my personal style unlike other ai apps where they are really formulaic.
 
--- testimonial: Outstanding Quality
-name: Thomas Mickeleit
-country: Germany
+-- testimonial: Had been looking for something exactly like this!
+name: Guido
+country: Netherlands
 
-The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive professional transcription tools, the results are dimensions better.
+I had been looking for a while for exactly this type of app, and I've yet to find one that works as seamless as this one! The multilingual input works really smooth.
 
 
 -- end: ds.section-row
@@ -423,14 +423,24 @@ string country:
 inset: $ds.spaces.inset-square.medium
 background.solid: $ds.colors.background.step-1
 width.fixed.percent: 30
+height.fixed.px: 190
 radius: $ds.radius.medium
 / spacing: $ds.spaces.vertical-gap.large
 
--- phosphor.fill: quote
-size: 24
+
+-- ftd.image:
+src: assets/quote.svg
+/ anchor.id: c2
+anchor: parent
+top.px: -6
+left.px: -12
+width.fixed.px: 24
+
+/ -- phosphor.fill: quote
+/ size: 24
 
 -- ds.column:
-spacing: $ds.spaces.vertical-gap.large
+/ spacing: $ds.spaces.vertical-gap.medium
 
 -- ds.heading-tiny: $testimonial.title
 color: $ds.colors.text-strong
@@ -444,9 +454,27 @@ $testimonial.description
 -- ds.row:
 align-content: left
 / width: hug-content
+spacing: $ds.spaces.horizontal-gap.extra-small
 
 -- phosphor.fill: star
 size: 18
+color: orange
+
+-- phosphor.fill: star
+size: 18
+color: orange
+
+-- phosphor.fill: star
+size: 18
+color: orange
+
+-- phosphor.fill: star
+size: 18
+color: orange
+
+-- phosphor.fill: star
+size: 18
+color: orange
 
 -- ds.fine-print: 
 color: $ds.colors.text-strong
@@ -548,32 +576,32 @@ wrap: true
 ;; flush: full
 
 -- feature:  Brainstorming
-icon: arrow-down.png
+icon: assets/bulb.png
 
 Capture your creative sparks on the go! TalkNotes transcribes your brainstorming sessions, so you can focus on your next big idea without missing a beat.
 
 -- feature:  Content Creation
-icon: arrow-down
+icon: assets/pencil.png
 
 Create content effortlessly! Dictate your thoughts directly into text and speed up the writing process. Ideal for bloggers, writers, and content marketers.
 
 -- feature:  Journaling
-icon: arrow-down
+icon: assets/book.png
 
 Document your personal journey with ease! Voice journaling with TalkNotes helps you express feelings, ideas, and memories without the need to type.
 
 -- feature:  Interviews
-icon: arrow-down
+icon: assets/mic.png
 
 Transcribe interviews in real-time! Whether it's for journalism or research, TalkNotes provides accurate text from your recorded conversations.
 
 -- feature:  Meetings
-icon: arrow-down
+icon: assets/chat.png
 
 Make meetings more productive! Record discussions, transcribe them instantly, and never miss an important detail again.
 
 -- feature:  Educational Notes
-icon: arrow-down
+icon: assets/scholar.png
 
 Enhance your learning! TalkNotes allows students and educators to convert lectures and study sessions into clear, organized notes for future reference.
 
@@ -596,6 +624,7 @@ radius: $ds.radius.medium
 / min-height.fixed.px: 224
 
 -- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-small
 
 -- ftd.image:
 src: $feature.icon
@@ -653,12 +682,19 @@ align: center
 spacing: $ds.spaces.horizontal-gap.extra-extra-large
 inset: $ds.spaces.inset-wide.small
 
+/ -- ds.row:
+/ width: fill-container
+/ align-content: right
+
 -- ftd.video:
 src: https://talknotes.io/videos/step-1.mp4
 width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
+align-self: end
+
+/ -- end: ds.row
 
 -- ds.column:
 
@@ -698,6 +734,7 @@ width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
+/ align-self: start
 
 -- end: ds.row
 
@@ -714,6 +751,7 @@ width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
+align-self: end
 
 -- ds.column:
 
@@ -772,14 +810,63 @@ height.fixed.px: 50
 -- end: social-proof
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- component hero:
 
 -- ds.section-row:
-inset: $ds.spaces.inset-tall.zero-small
+inset: $ds.spaces.inset-tall.zero-medium
 
 -- ds.column:
-spacing: $ds.spaces.vertical-gap.large
+spacing: $ds.spaces.vertical-gap.medium
 align-content: left
+
+-- ds.container:
+inset: $ds.spaces.inset-square.small
+width.fixed.percent: 40
+background.solid: $ds.colors.background.step-2
+radius: $ds.radius.medium
+margin-vertical: $ds.spaces.vertical-gap.zero
+
+-- ds.row:
+
+-- ftd.image:
+src: assets/medal.png
+width.fixed.px: 32
+
+-- ds.column:
+spacing: $ds.spaces.vertical-gap.zero
+align-content: left
+
+-- ds.fine-print:
+align: left
+
+PRODUCT HUNT
+
+-- ds.copy-regular:
+align: left
+color: $inherited.colors.text-strong
+
+#1 Product of the Day
+
+-- end: ds.column
+
+-- end: ds.row
+
+-- end: ds.container
 
 -- ds.heading-large: Turn messy thoughts into actionable notes. Fast.
 
@@ -792,18 +879,38 @@ Turn hours of note taking into minutes. Just record a voicenote, and let the AI 
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
+width: wide
 
 -- ds.row:
 ;; color: $inherited.colors.custom.two
 align-content: left
+
 
 -- ds.copy-small:
 color: $inherited.colors.text-strong
 
 Trusted by +3000 happy users
 
--- phosphor.bold: star
-size: 24
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.zero
+width: hug-content
+
+-- phosphor.fill: star
+size: 18
+
+-- phosphor.fill: star
+size: 18
+
+-- phosphor.fill: star
+size: 18
+
+-- phosphor.fill: star
+size: 18
+
+-- phosphor.fill: star
+size: 18
+
+-- end: ds.row
 
 -- end: ds.row
 
@@ -849,6 +956,7 @@ shadow: $s
 inset: $ds.spaces.inset-tall.zero-small
 outer-background.solid: $ds.colors.background.step-2
 spacing: $ds.spaces.horizontal-gap.extra-large
+flush: full
 
 -- ftd.image:
 src: https://talknotes.io/_ipx/w_150&q_80/images/brand/logo-color.svg
