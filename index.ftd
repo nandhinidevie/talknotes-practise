@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/design-system as ds
 -- import: fastn-community.github.io/bling/collapse
+-- import: fastn-community.github.io/svg-icons/phosphor
 
 -- ds.page:
 
@@ -13,6 +14,7 @@
 src: assets/arrow-down.png
 width.fixed.px: 60
 align-self: center
+margin-bottom.px: 24
 
 -- how-it-works:
 
@@ -181,6 +183,10 @@ link: /
 
 -- component last:
 
+-- ds.row:
+align-content: center
+/ margin: $ds.spaces.vertical-gap.extra-large
+
 -- ds.container:
 inset: $ds.spaces.inset-square.large
 background.solid: blue
@@ -213,6 +219,8 @@ src: https://talknotes.io/_ipx/w_500&q_80/images/banner-thumbnail.jpg
 
 -- end: ds.container
 
+-- end: ds.row
+
 -- end: last
 
 
@@ -236,7 +244,7 @@ spacing: $ds.spaces.horizontal-gap.medium
 margin: $ds.spaces.vertical-gap.extra-large
 
 -- ds.heading-medium: F.A.Q
-text-align: center
+align: center
 
 -- collapse.collapse: How accurate is the voice-to-text conversion?
 
@@ -282,13 +290,13 @@ nostrud exercitation ullamco laboris nisi ut
 -- ds.section-column:
 
 -- ds.heading-medium: Pricing
-text-align: center
+align: center
 
 -- ds.heading-large: Turn your ramblings into actionable notes
-text-align: center
+align: center
 
 -- ds.heading-tiny: Limited time Launch offer: up to 75% off
-text-align: center
+align: center
 color: blue
 
 -- ds.container:
@@ -301,8 +309,8 @@ radius: $ds.radius.medium
 
 -- ds.column:
 
--- ds.heading-hero: USD 59
-text-align: center
+-- ds.heading-hero: \$59
+align: center
 
 -- ds.copy-small:
 
@@ -342,7 +350,7 @@ TalkNotes + Include:
 
 
 -- ds.copy-large:
-text-align: center
+align: center
 
 Trusted by +3000 happy users 
 
@@ -418,8 +426,15 @@ width.fixed.percent: 30
 radius: $ds.radius.medium
 / spacing: $ds.spaces.vertical-gap.large
 
+-- phosphor.fill: quote
+size: 24
+
+-- ds.column:
+spacing: $ds.spaces.vertical-gap.large
+
 -- ds.heading-tiny: $testimonial.title
 color: $ds.colors.text-strong
+/margin: 
 
 -- ds.fine-print: 
 color: $ds.colors.text
@@ -428,7 +443,10 @@ $testimonial.description
 
 -- ds.row:
 align-content: left
-width: hug-content
+/ width: hug-content
+
+-- phosphor.fill: star
+size: 18
 
 -- ds.fine-print: 
 color: $ds.colors.text-strong
@@ -441,6 +459,8 @@ color: $ds.colors.text
 $testimonial.country
 
 -- end: ds.row
+
+-- end: ds.column
 
 -- end: ds.container
 
@@ -466,15 +486,18 @@ $testimonial.country
 -- ds.section-column:
 
 -- ds.heading-medium: Demo video
-text-align: center
+align: center
+
+-- ds.column:
+width.fixed.px: 450
 
 -- ds.copy-regular:
-text-align: center
+align: center
 
 Want to see the app in action? No worries, I've got you covered!
-
 Here is a live demo showing how to create a note:
 
+-- end: ds.column
 
 -- ftd.video:
 src: https://talknotes.io/videos/step-1.mp4
@@ -500,7 +523,7 @@ link: /
 spacing: $ds.spaces.vertical-gap.medium
 
 -- ds.heading-medium: Use cases
-text-align: center
+align: center
 
 -- features:
 
@@ -522,27 +545,35 @@ link: /
 -- ds.section-row:
 spacing: $ds.spaces.vertical-gap.medium
 wrap: true
+;; flush: full
 
 -- feature:  Brainstorming
+icon: arrow-down.png
 
 Capture your creative sparks on the go! TalkNotes transcribes your brainstorming sessions, so you can focus on your next big idea without missing a beat.
 
 -- feature:  Content Creation
+icon: arrow-down
 
 Create content effortlessly! Dictate your thoughts directly into text and speed up the writing process. Ideal for bloggers, writers, and content marketers.
 
 -- feature:  Journaling
+icon: arrow-down
 
 Document your personal journey with ease! Voice journaling with TalkNotes helps you express feelings, ideas, and memories without the need to type.
+
 -- feature:  Interviews
+icon: arrow-down
 
 Transcribe interviews in real-time! Whether it's for journalism or research, TalkNotes provides accurate text from your recorded conversations.
 
 -- feature:  Meetings
+icon: arrow-down
 
 Make meetings more productive! Record discussions, transcribe them instantly, and never miss an important detail again.
 
 -- feature:  Educational Notes
+icon: arrow-down
 
 Enhance your learning! TalkNotes allows students and educators to convert lectures and study sessions into clear, organized notes for future reference.
 
@@ -554,6 +585,7 @@ Enhance your learning! TalkNotes allows students and educators to convert lectur
 
 -- component feature:
 caption title:
+ftd.image-src icon:
 body description:
 
 -- ds.container:
@@ -561,9 +593,22 @@ inset: $ds.spaces.inset-square.medium
 background.solid: $ds.colors.background.step-1
 width.fixed.percent: 30
 radius: $ds.radius.medium
+/ min-height.fixed.px: 224
+
+-- ds.row:
+
+-- ftd.image:
+src: $feature.icon
+width.fixed.px: 24
+
+/ phosphor.fill: star
+/ size: 24
+/ color: blue
 
 -- ds.heading-small: $feature.title
 color: $ds.colors.text-strong
+
+-- end: ds.row
 
 -- ds.fine-print: 
 color: $ds.colors.text
@@ -602,7 +647,7 @@ $feature.description
 spacing: $ds.spaces.vertical-gap.extra-large
 
 -- ds.heading-medium: How does it work?
-text-align: center
+align: center
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.extra-extra-large
@@ -638,10 +683,10 @@ inset: $ds.spaces.inset-wide.small
 align-content: right
 
 -- ds.heading-small: 2.Choose a style
-text-align: end
+align: right
 
 -- ds.copy-large:
-text-align: end
+align: right
 
 TalkNotes will transcribe your voice into any kind of content. Transcript, Task list, journal entry, Blog post... Your creativity is the only limit!
 
@@ -748,10 +793,19 @@ Turn hours of note taking into minutes. Just record a voicenote, and let the AI 
 icon: arrow-right
 link: /
 
+-- ds.row:
+;; color: $inherited.colors.custom.two
+align-content: left
+
 -- ds.copy-small:
 color: $inherited.colors.text-strong
 
 Trusted by +3000 happy users
+
+-- phosphor.bold: star
+size: 24
+
+-- end: ds.row
 
 -- end: ds.column
 
@@ -759,6 +813,7 @@ Trusted by +3000 happy users
 src: assets/hero.png
 width.fixed.percent: 40
 border-radius.px: 15
+shadow: $s
 
 -- end: ds.section-row
 
@@ -836,3 +891,9 @@ link: /
 
 -- end: header
 
+
+
+-- ftd.shadow s:
+color: #d0d0d0
+blur.px: 8
+spread.px: 4
