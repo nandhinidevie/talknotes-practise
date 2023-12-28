@@ -10,11 +10,7 @@
 
 -- social-proof:
 
--- ftd.image:
-src: assets/arrow-down.png
-width.fixed.px: 60
-align-self: center
-margin-bottom.px: 24
+-- arrow:
 
 -- how-it-works:
 
@@ -38,6 +34,32 @@ margin-bottom.px: 24
 
 
 
+
+
+
+
+
+
+
+
+
+
+-- component arrow:
+
+/ -- ftd.image:
+/ src: assets/arrow-down.png
+/ width.fixed.px: 60
+/ align-self: center
+/ margin-bottom.px: 24
+
+-- ds.section-row:
+
+-- phosphor.bold: caret-down
+size: 80
+
+-- end: ds.section-row
+
+-- end: arrow
 
 
 
@@ -185,7 +207,7 @@ link: /
 
 -- ds.row:
 align-content: center
-/ margin: $ds.spaces.vertical-gap.extra-large
+
 
 -- ds.container:
 inset: $ds.spaces.inset-square.large
@@ -197,6 +219,7 @@ radius: $ds.radius.medium
 
 -- ds.column:
 align-content: left
+spacing: $ds.spaces.vertical-gap.large
 
 -- ds.copy-large:
 
@@ -209,11 +232,13 @@ Speak your ideas & turn your ramblings into usable content. Create unlimited not
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
+width: full
 
 -- end: ds.column
 
 -- ftd.image:
 src: https://talknotes.io/_ipx/w_500&q_80/images/banner-thumbnail.jpg
+width.fixed.percent: 50
 
 -- end: ds.row
 
@@ -304,6 +329,7 @@ inset: $ds.spaces.inset-square.large
 background.solid: $ds.colors.background.step-1
 width.fixed.percent: 80
 radius: $ds.radius.medium
+/ shadow: $s
 
 -- ds.row:
 
