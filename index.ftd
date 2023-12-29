@@ -345,6 +345,7 @@ For a whole year of access
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
+width: full
 
 -- ds.fine-print:
 
@@ -407,7 +408,7 @@ Trusted by +3000 happy users
 -- ds.section-row:
 spacing: $ds.spaces.horizontal-gap.medium
 wrap: true
-flush: wide
+flush: full
 inset: $ds.spaces.inset-wide.small
 
 -- testimonial: Outstanding Quality
@@ -466,7 +467,8 @@ width.fixed.px: 24
 / size: 24
 
 -- ds.column:
-/ spacing: $ds.spaces.vertical-gap.medium
+spacing: $ds.spaces.horizontal-gap.space-between
+height.fixed.px: 180
 
 -- ds.heading-tiny: $testimonial.title
 color: $ds.colors.text-strong
@@ -564,6 +566,7 @@ border-radius.px: 15
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
+width: wide
 
 -- end: ds.section-column
 
@@ -584,6 +587,7 @@ align: center
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
+width: wide
 
 -- end: ds.section-column
 
@@ -649,18 +653,23 @@ width.fixed.percent: 30
 radius: $ds.radius.medium
 / min-height.fixed.px: 224
 
+-- ds.column:
+spacing: $ds.spaces.horizontal-gap.space-between
+height.fixed.px: 120
+
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.extra-small
+align-content: left
 
 -- ftd.image:
 src: $feature.icon
-width.fixed.px: 24
+width.fixed.px: 18
 
 / phosphor.fill: star
 / size: 24
 / color: blue
 
--- ds.heading-small: $feature.title
+-- ds.heading-tiny: $feature.title
 color: $ds.colors.text-strong
 
 -- end: ds.row
@@ -669,6 +678,8 @@ color: $ds.colors.text-strong
 color: $ds.colors.text
 
 $feature.description
+
+-- end: ds.column
 
 -- end: ds.container
 
@@ -708,19 +719,20 @@ align: center
 spacing: $ds.spaces.horizontal-gap.extra-extra-large
 inset: $ds.spaces.inset-wide.small
 
-/ -- ds.row:
-/ width: fill-container
+-- ds.row:
+width: fill-container
 / align-content: right
 
 -- ftd.video:
 src: https://talknotes.io/videos/step-1.mp4
-width.fixed.percent: 40
+/ width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
-align-self: end
+/ align-self: end
+width: fill-container
 
-/ -- end: ds.row
+-- end: ds.row
 
 -- ds.column:
 
@@ -754,30 +766,42 @@ TalkNotes will transcribe your voice into any kind of content. Transcript, Task 
 
 -- end: ds.column
 
+-- ds.row:
+width: fill-container
+
 -- ftd.video:
 src: https://talknotes.io/videos/step-2.mp4
-width.fixed.percent: 40
+/ width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
 / align-self: start
+width: fill-container
 
 -- end: ds.row
 
+-- end: ds.row
 
 
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.extra-extra-large
 inset: $ds.spaces.inset-wide.small
+width: fill-container
+
+-- ds.row:
+width: fill-container
 
 -- ftd.video:
 src: https://talknotes.io/videos/step-3.mp4
-width.fixed.percent: 40
+/ width.fixed.percent: 40
 autoplay: true
 loop: true
 border-radius.px: 15
-align-self: end
+/ align-self: end
+width: fill-container
+
+-- end: ds.row
 
 -- ds.column:
 
@@ -795,7 +819,7 @@ Tweak your note to your liking. Create folders, add tags, change the format, edi
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
-
+width: wide
 
 -- end: ds.section-column
 
@@ -855,6 +879,7 @@ height.fixed.px: 50
 
 -- ds.section-row:
 inset: $ds.spaces.inset-tall.zero-medium
+spacing: $ds.spaces.horizontal-gap.extra-extra-large
 
 -- ds.column:
 spacing: $ds.spaces.vertical-gap.medium
@@ -862,7 +887,7 @@ align-content: left
 
 -- ds.container:
 inset: $ds.spaces.inset-square.small
-width.fixed.percent: 40
+width.fixed.percent: 50
 background.solid: $ds.colors.background.step-2
 radius: $ds.radius.medium
 margin-vertical: $ds.spaces.vertical-gap.zero
@@ -905,7 +930,7 @@ Turn hours of note taking into minutes. Just record a voicenote, and let the AI 
 -- ds.phosphor-icon-button: Get Talknotes +
 icon: arrow-right
 link: /
-width: wide
+width: full
 
 -- ds.row:
 ;; color: $inherited.colors.custom.two
