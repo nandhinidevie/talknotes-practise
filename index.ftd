@@ -878,8 +878,8 @@ height.fixed.px: 50
 -- component hero:
 
 -- ds.section-row:
-inset: $ds.spaces.inset-tall.zero-medium
 spacing: $ds.spaces.horizontal-gap.extra-extra-large
+inset: $ds.spaces.inset-tall.zero-medium
 
 -- ds.column:
 spacing: $ds.spaces.vertical-gap.medium
@@ -890,7 +890,6 @@ inset: $ds.spaces.inset-square.small
 width.fixed.percent: 50
 background.solid: $ds.colors.background.step-2
 radius: $ds.radius.medium
-margin-vertical: $ds.spaces.vertical-gap.zero
 
 -- ds.row:
 
@@ -1004,18 +1003,19 @@ shadow: $s
 -- component header:
 
 -- ds.section-row:
-inset: $ds.spaces.inset-tall.zero-small
+inset: $ds.spaces.inset-wide.large
 outer-background.solid: $ds.colors.background.step-2
-spacing: $ds.spaces.horizontal-gap.extra-large
+spacing: $ds.spaces.horizontal-gap.space-between
 flush: full
+margin: $ds.spaces.vertical-gap.extra-large
 
 -- ftd.image:
 src: https://talknotes.io/_ipx/w_150&q_80/images/brand/logo-color.svg
-width.fixed.px: 142
-height.fixed.px: 34
+width.fixed.percent: 10
 
 -- ds.row:
-width: hug-content
+spacing: $ds.spaces.horizontal-gap.large
+width: fill-container
 
 -- ds.header-link: Try it
 link: /
